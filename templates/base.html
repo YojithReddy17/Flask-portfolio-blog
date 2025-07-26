@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="content">
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/portfolio">Portfolio</a> |
+            <a href="/blog">Blog</a>
+        </nav>
+        <hr>
+
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Create New Post{% endblock %}
+
+{% block content %}
+    <h1>Create a New Blog Post</h1>
+    <!-- The form will send a POST request to this same URL -->
+    <form method="post">
+        <label for="title">Title</label>
+        <br>
+        <input type="text" name="title" placeholder="Post title" size="50" required>
+        <br>
+        <br>
+        <label for="content">Content</label>
+        <br>
+        <textarea name="content" placeholder="Post content" rows="10" cols="50" required></textarea>
+        <br>
+        <br>
+        <button type="submit">Create Post</button>
+    </form>
+{% endblock %}

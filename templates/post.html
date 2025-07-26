@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+    <article>
+        <h1>{{ post.title }}</h1>
+        <p><em>By {{ post.author }} on {{ post.date }}</em></p>
+        <hr>
+        <div>
+            <!-- This will display the full content of the post -->
+            <p>{{ post.content }}</p>
+        </div>
+    </article>
+    <br>
+    <a href="{{ url_for('blog') }}">← Back to all posts</a>
+{% endblock %}
