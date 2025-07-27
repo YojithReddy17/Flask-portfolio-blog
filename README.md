@@ -34,8 +34,8 @@ To run this project on your local machine, please follow these steps:
 
 Clone the repository (or download the source code):
 
-git clone [your-repo-url]
-cd [your-project-folder]
+git clone (https://github.com/YojithReddy17/Flask-portfolio-blog.git)
+cd Flask-portfolio-blog
 
 Create and activate a Python virtual environment:
 
